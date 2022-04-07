@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./codificador.css">
+    <title>Crypty</title>
+  </head>
+
+    <div class="content-container">
+
+      <img class="Background image" src="https://deliriumnerd.com/wp-content/uploads/2018/09/Ada-Lovelace-DELIRIUM-NERD.png" src="">
+
+        <form class="form">
+
+            <div class="input-container">
+                <label id="text-box" for="">Insira seu texto:</label>
+                <textarea name="decoded-text" id="decoded-text"></textarea>
+            </div>
+        
+            <div class="options-container">
+                <label for="">Tipo</label>
+
+                <select id="cypher-type">
+                  <option selected>Base64</option>
+                  <option>Caesar</option>
+                </select>
+
+                <div id="options">
+                    <label for="encode-radio">Codificar</label>
+                    <input type="radio" name="radio" id="encode-radio" onchange="changeBtnName()" checked>
+
+                    <label for="decode-radio">Decodificar</label>
+                    <input type="radio" name="radio" id="decode-radio" onchange="changeBtnName()">
+                </div>
+
+                <input type="submit" value="Encode message" id="submit-btn">
+            </div>
+
+            <div class="result-container">
+                <label for="encoded-text">Seu texto codificado:</label>
+                <textarea name="encoded-text" id="encoded-text"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <script src="./codigo.js"></script>
+  </body>
+</html>
